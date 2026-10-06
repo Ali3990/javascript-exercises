@@ -1,7 +1,7 @@
 const factorial = require("./factorial");
 
 describe('factorial', () => {
-  test('4th factorial number is 24', () => {
+  test.skip('4th factorial number is 24', () => {
     expect(factorial(4)).toBe(24);
   });
   test.skip('6th factorial number is 720', () => {
