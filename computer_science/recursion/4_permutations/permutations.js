@@ -1,3 +1,4 @@
+// initial check if it is an array
 const arrayCheck = (input) => Array.isArray(input);
 
 const permutations = function(arr) {
@@ -7,10 +8,15 @@ const permutations = function(arr) {
     if (!arrayCheck(arr)) {return;}
 
     //base case: if empty, return an array of an empty array
-    if (arr.length === 0) {
+    if (arr.length <= 1) {
         combinations.push(arr);
-        
-    } 
+    } else {
+        // double nested for loop?
+        for (i=0; i < arr.length; i++ ) {
+            const current = arr[i];
+            
+        }
+    }
 
 
     return combinations;
